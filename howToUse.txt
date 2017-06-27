@@ -1,0 +1,24 @@
+If it is the first time running:
+
+Use NPM Install for dependencies
+
+Start MongoDB
+From CMD goto cd "C:\Program Files\MongoDB\Server\3.4\bin\"
+Then type ".\mongod.exe"
+
+
+
+Build Angular and keep rebuilding:
+Run "npm run build" to run the development build script => Keep this process running!
+
+
+
+Start Node:
+Run NPM Start
+
+
+
+Mongo Client
+From CMD goto cd "C:\Program Files\MongoDB\Server\3.4\bin\"
+Then type ".\mongo.exe"
+

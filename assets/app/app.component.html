@@ -1,0 +1,6 @@
+<app-header></app-header>
+<div class="container">
+    <router-outlet *ngIf="isLoggedIn()"></router-outlet>
+    <h2 *ngIf="!isLoggedIn()">Log In!</h2>
+</div>
+<app-error></app-error>

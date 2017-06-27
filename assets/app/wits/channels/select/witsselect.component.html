@@ -1,0 +1,8 @@
+<div class="well" style="text-align:center">Select a Saved Wits Channel Configuration:</div>
+<div *ngFor="let wts of WitsList" (click)="selectedThisWits(wts)">
+    <a style="cursor: pointer;" class="list-group-item clearfix" [class.active]="isSelected(wts)">
+        <div class="pull-left">
+            <h4 class="list-group-item-heading">{{ wts.Name }}</h4>
+        </div>
+    </a>
+</div>
