@@ -15,6 +15,8 @@ export class WitsService {
         this.selectedWitsEvent.emit(wts)
     }
 
+    activeWell: any
+
     secondWits = {
         "_id": "590d2e5f1f878d326c9ffb85",
         "instant": new Date("2017-05-06T02:01:03.928Z"),

@@ -1,12 +1,12 @@
 <div *ngIf="selectedWits">
     <div class="well" style="text-align:center">Configuration selected: {{selectedWits.Name}}</div>
     <div class="btn-group btn-group-justified">
-        <a (click)="isInEditMode = !isInEditMode" class="btn btn-primary">Edit</a>
-        <a href="#" class="btn btn-primary">Save</a>
-        <a href="#" class="btn btn-primary">Duplicate</a>
+        <a (click)="isInEditMode = !isInEditMode" class="btn btn-primary">{{!isInEditMode ? 'Edit' : 'Done Editing'}}</a>
+        <a *ngIf="!isActive()" class="btn btn-primary">Save</a>
+        <a (click)="duplicate()" class="btn btn-primary">Duplicate</a>
     </div>
     <div class="btn-group btn-group-justified">
-        <a href="#" class="btn btn-default">Push to current well</a>
+        <a (click)="activate()" class="btn btn-default">Push to current well</a>
     </div>
     <br>
     <table class="table table-striped">

@@ -26,6 +26,9 @@ export class WitsSelectComponent implements OnInit {
         return wts === this.witsService.selectedWits
     }
 
+    isActiveWell(wts) {
+        return wts === this.witsService.activeWell
+    }
 
     ngOnInit() {
 
