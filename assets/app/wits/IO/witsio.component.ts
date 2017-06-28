@@ -1,5 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { FormGroup, FormControl, Validators } from "@angular/forms";
+import { WitsService } from "../wits.service";
+
 
 @Component({
     selector: 'app-witsio',
@@ -7,7 +9,8 @@ import { FormGroup, FormControl, Validators } from "@angular/forms";
 })
 export class WitsIOComponent implements OnInit {
 
-    constructor() { }
+    constructor(private witsService: WitsService) { }
+    selectedWitsConfig = this.witsService.selectedWitsConfig
 
 
     ngOnInit() {

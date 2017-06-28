@@ -5,6 +5,8 @@ import { WitsComponent } from "./wits.component";
 import { WitseditComponent } from "./channels/edit/witsedit.component";
 import { WitsSelectComponent } from "./channels/select/witsselect.component";
 import { WitsIOComponent } from "./IO/witsio.component";
+import { WitsSelectComponentio } from "./IO/select/witsselectio.component";
+import { WitseditComponentio } from "./IO/edit/witseditio.component";
 import { WitschannelsComponent } from "./channels/witschannels.component";
 import { WitsService } from "./wits.service";
 import { witsRouting } from "./wits.routing";
@@ -15,7 +17,9 @@ import { witsRouting } from "./wits.routing";
         WitsIOComponent,
         WitschannelsComponent,
         WitseditComponent,
-        WitsSelectComponent
+        WitsSelectComponent,
+        WitsSelectComponentio,
+        WitseditComponentio
     ],
     imports: [
         CommonModule,
